@@ -101,12 +101,12 @@ html{font-size:clamp(15px,2.35vmin,34px);-webkit-text-size-adjust:100%;scrollbar
 :root{
   --bg:#0B0C10;
   --card:#111318;
-  --border:rgba(102,252,241,.18);
-  --cyan:#66FCF1;
+  --border:rgba(0,255,65,.18);
+  --cyan:#00ff41;
   --green:#10b981;
   --text:#D4D6D8;
   --dim:rgba(212,214,216,.78);
-  --glow:rgba(102,252,241,.4);
+  --glow:rgba(0,255,65,.4);
 }
 
 body{
@@ -201,7 +201,7 @@ body::after{
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  filter:drop-shadow(0 0 1rem rgba(102,252,241,.25));
+  filter:drop-shadow(0 0 1rem rgba(0,255,65,.25));
   margin-bottom:.4rem;
 }
 .hero-role{
@@ -281,7 +281,7 @@ body::after{
   letter-spacing:.08em;
   text-transform:uppercase;
   color:var(--cyan);
-  background:rgba(102,252,241,.04);
+  background:rgba(0,255,65,.04);
 }
 .cv td{color:var(--dim)}
 
@@ -331,7 +331,7 @@ body::after{
   border-radius:999px;
   padding:.2rem .6rem;
   white-space:nowrap;
-  background:rgba(102,252,241,.04);
+  background:rgba(0,255,65,.04);
 }
 .tl-role{font-size:.92rem;font-weight:600;color:var(--cyan);margin:.6rem 0 .1rem}
 .tl-when{font-size:.78rem;color:var(--dim);margin-bottom:.35rem}
@@ -424,7 +424,7 @@ body::after{
     ctx.font=fs+'px monospace';
     for(var i=0;i<cols;i++){
       var x=i*fs,y=drops[i]*fs,ch=chars[(Math.random()*chars.length)|0];
-      ctx.fillStyle=Math.random()>0.985?'rgba(102,252,241,0.85)':'rgba(16,185,129,0.46)';
+      ctx.fillStyle=Math.random()>0.985?'rgba(0,255,65,0.85)':'rgba(16,185,129,0.46)';
       ctx.fillText(ch,x,y);
       if(y>h&&Math.random()>0.975)drops[i]=0;
       drops[i]++;
