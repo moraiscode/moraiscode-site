@@ -17,21 +17,45 @@ jobs:
       - name: Validar HTML e arquivos obrigatórios
         run: python3 .ci/check.py
 
-  smoke:
-    name: CD · smoke test pós-deploy
+  deploy:
+    name: CD · publicar no servidor
     needs: ci
     runs-on: ubuntu-latest
+    env:
+      SSH_HOST: 45.137.159.188
+      SSH_PORT: "65002"
+      SSH_USER: u985643746
     steps:
-      - name: Aguardar o webhook publicar e checar ao vivo
+      - uses: actions/checkout@v4
+      - name: Sincronizar docroot via SSH
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         run: |
-          sleep 30
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p "$SSH_PORT" -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          ssh -i ~/.ssh/id_ed25519 -p "$SSH_PORT" -o IdentitiesOnly=yes \
+            "$SSH_USER@$SSH_HOST" \
+            'cd ~/deploys/moraiscode-site && git fetch -q origin main && git reset -q --hard origin/main && bash scripts/deploy.sh'
+
+  smoke:
+    name: Smoke · site ao vivo
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checar home e /curriculo
+        run: |
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+          sleep 5
           fail=0
           for url in https://moraiscode.com/ https://moraiscode.com/curriculo/; do
             code=$(curl -s -o /tmp/page.html -w "%{http_code}" -A "$UA" "$url")
             echo "$url -> HTTP $code"
-            if [ "$code" != "200" ]; then fail=1; fi
+            [ "$code" = "200" ] || fail=1
             if grep -qE "<<<<<<<|>>>>>>>" /tmp/page.html; then echo "conflito git no HTML de $url"; fail=1; fi
           done
-          curl -s -A "$UA" https://moraiscode.com/ | grep -q "#00ff41" || { echo "hero sem o verde terminal esperado"; fail=1; }
+          if ! curl -s -A "$UA" https://moraiscode.com/ | grep -q "#00ff41"; then
+            echo "hero sem o verde terminal esperado"; fail=1
+          fi
           exit $fail
