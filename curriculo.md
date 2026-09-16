@@ -1,0 +1,141 @@
+# Felipe Morais
+
+**Engenheiro de Software & Servidor Público Federal**
+
+Brasília, Distrito Federal, Brasil
+
+- **WhatsApp:** (61) 98653-5340
+- **E-mail:** contato.felipeamorim@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/moraiscode
+- **Instagram:** https://instagram.com/moraiscode
+- **Portfólio:** https://www.behance.net/moraiscode
+
+## Resumo
+
+Brasiliense. Formado em Análise e Desenvolvimento de Sistemas. Apaixonado por
+design, tecnologia e empreendedorismo.
+
+## Principais competências
+
+- Gestão de projetos
+- Inteligência artificial
+- Relações públicas
+
+## Idiomas
+
+| Idioma | Nível |
+|--------|-------|
+| Português | Nativo ou bilíngue |
+| Inglês | Intermediário (Limited Working) |
+| Espanhol | Básico (Elementary) |
+
+## Certificações
+
+- Digital Innovator
+- Marketing Digital
+
+## Experiência
+
+### Conselho Federal de Nutrição — 12 anos 1 mês
+
+**Chefe da Unidade de Gestão de Desenvolvimento (UGD)**
+*dezembro de 2025 – Presente · Brasília, DF*
+
+Assessor IV e Chefe da Unidade de Gestão de Desenvolvimento. A UGD, vinculada à
+Coordenação de Tecnologia da Informação, tem por finalidade planejar, desenvolver,
+implantar e manter sistemas e aplicações que suportem os processos institucionais
+do CFN.
+
+§1º Compete à Unidade de Desenvolvimento:
+
+- I – analisar demandas de sistemas e propor soluções tecnológicas adequadas;
+- II – desenvolver, atualizar, integrar e manter sistemas corporativos e aplicativos;
+- III – assegurar a usabilidade, acessibilidade, segurança e desempenho das aplicações;
+- IV – manter atualizada a documentação técnica e funcional dos sistemas;
+- V – apoiar a integração de sistemas quando necessário, assegurando interoperabilidade;
+- VI – acompanhar a evolução tecnológica e propor inovações alinhadas às necessidades institucionais.
+
+**Comissão de Representação dos Servidores**
+*setembro de 2025 – Presente · Brasília, DF*
+
+A Comissão de Representação dos Empregados é prevista no art. 11 da Constituição
+Federal e regulamentada a partir da Reforma Trabalhista (Lei nº 13.467/2017), com a
+inclusão dos arts. 510-A a 510-D da Consolidação das Leis do Trabalho.
+
+**Assessor de TI**
+*fevereiro de 2025 – dezembro de 2025 · Brasília, DF*
+
+Assessor I: Tecnologia da Informação. Atividades voltadas tanto para Análise de
+Sistemas quanto Full-Stack, Inteligência Artificial, Automação, BPMN, Mapeamento e
+Melhoria de Negócios.
+
+**PST – Profissional de Suporte Técnico**
+*setembro de 2014 – fevereiro de 2025 · Brasília, DF*
+
+PST – Profissional de Suporte Técnico de 2015 a 2019 na Unidade de Gestão
+Operacional (UGO). Assessor de Comunicação de 2019 a 2024 na Unidade de Imprensa e
+Comunicação (UIC).
+
+### BRAZCODE
+
+**Full Stack Developer**
+*abril de 2023 – Presente · Brasília e Região*
+
+A BRAZCODE é uma empresa especializada no planejamento, desenvolvimento e gestão de
+projetos de TIC – Tecnologia da Informação e Comunicação para profissionais liberais,
+autônomos, empresas públicas e privadas em todas as categorias.
+
+### CEMEFE Assistência Médica Hospitalar a Família Ltda.
+
+**Assessor de TI**
+*agosto de 2024 – Presente · Brasília, DF*
+
+Desenvolvimento e manutenção de SaaS, otimização de processos e B.I.
+
+### Sanzza — Marketing & Sales
+
+**Full Stack Developer**
+*janeiro de 2024 – julho de 2024 · Porto, Portugal*
+
+### Doe Amor
+
+**Fundador**
+*novembro de 2016 – novembro de 2018 · Brasília e Região*
+
+A Doe Amor é uma plataforma social que tem como objetivo conectar pessoas a projetos
+sociais de diferentes segmentos.
+
+### a2designer
+
+**Estagiário**
+*agosto de 2013 – maio de 2014 · Brasília e Região*
+
+Manutenção e desenvolvimento de sistemas PHP/CakePHP e Webdesign.
+
+### Universidade de Brasília
+
+**Estagiário**
+*novembro de 2012 – agosto de 2013*
+
+Estágio não obrigatório na Diretoria de Compras (DCO) da UnB – Darcy Ribeiro.
+
+### Evolute
+
+**Estagiário**
+*setembro de 2012 – novembro de 2012*
+
+Estágio supervisionado pelo SENAC/DF para conclusão do curso Técnico em Informática
+na empresa Evolute Informática, onde desenvolvi e fiz manutenção em sistemas C# e PHP.
+
+## Formação acadêmica
+
+- **Pós-graduação Lato Sensu – MBA em Inteligência Artificial para Automação de Processos**
+  Universidade Cruzeiro do Sul · maio de 2025 – janeiro de 2026
+- **Programador Web**
+  Senac DF · fevereiro de 2024 – junho de 2024
+- **Tecnólogo em Análise e Desenvolvimento de Sistemas**
+  UniCEUB – Centro Universitário de Brasília · 2012 – 2016
+- **Técnico em Informática**
+  Senac DF · 2011 – 2012
+- **Montagem e Manutenção de Computadores e Redes**
+  Faculdade Microlins · 2009 – 2010

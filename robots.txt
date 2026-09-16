@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tmp_wp/
+
+Sitemap: https://moraiscode.com/sitemap.xml

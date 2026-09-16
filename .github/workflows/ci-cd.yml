@@ -1,0 +1,37 @@
+name: CI/CD — moraiscode.com
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: CI · sanidade dos arquivos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar HTML e arquivos obrigatórios
+        run: python3 .ci/check.py
+
+  smoke:
+    name: CD · smoke test pós-deploy
+    needs: ci
+    runs-on: ubuntu-latest
+    steps:
+      - name: Aguardar o webhook publicar e checar ao vivo
+        run: |
+          sleep 30
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+          fail=0
+          for url in https://moraiscode.com/ https://moraiscode.com/curriculo/; do
+            code=$(curl -s -o /tmp/page.html -w "%{http_code}" -A "$UA" "$url")
+            echo "$url -> HTTP $code"
+            if [ "$code" != "200" ]; then fail=1; fi
+            if grep -qE "<<<<<<<|>>>>>>>" /tmp/page.html; then echo "conflito git no HTML de $url"; fail=1; fi
+          done
+          curl -s -A "$UA" https://moraiscode.com/ | grep -q "#00ff41" || { echo "hero sem o verde terminal esperado"; fail=1; }
+          exit $fail

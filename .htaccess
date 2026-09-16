@@ -1,0 +1,35 @@
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 301: www -> non-www (evita conteudo duplicado)
+RewriteCond %{HTTP_HOST} ^www\.moraiscode\.com$ [NC]
+RewriteRule ^ https://moraiscode.com%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+Options -MultiViews
+Options -Indexes
+
+AddType text/markdown .md
+AddType text/plain .txt
+AddDefaultCharset UTF-8
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+<FilesMatch "\.(env|config|ini|log|sh|sql)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule Litespeed>
+SetEnv noabort 1
+</IfModule>

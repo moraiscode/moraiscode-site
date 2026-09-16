@@ -1,0 +1,28 @@
+# Felipe Morais
+
+> Engenheiro de Software e Full Stack Developer, Servidor Público Federal no CFN (Brasília/DF). Atua com desenvolvimento web, automação, inteligência artificial e gestão de projetos de TIC.
+
+## Contato
+
+- E-mail: contato.felipeamorim@gmail.com
+- WhatsApp: +55 61 98653-5340
+- GitHub: https://github.com/moraiscode
+- LinkedIn: https://www.linkedin.com/in/moraiscode/
+- Instagram: https://www.instagram.com/moraiscode
+- Behance: https://www.behance.net/moraiscode
+
+## Tecnologias
+
+JavaScript, Python, HTML5, CSS3, Docker, WordPress, Linux, Node.js, Git, PostgreSQL
+
+## Currículo
+
+- PDF: https://moraiscode.com/curriculo.pdf
+- Markdown: https://moraiscode.com/curriculo.md
+- Texto: https://moraiscode.com/curriculo.txt
+
+## Formação
+
+- MBA em Inteligência Artificial para Automação de Processos — Universidade Cruzeiro do Sul
+- Tecnólogo em Análise e Desenvolvimento de Sistemas — UniCEUB
+- Programador Web — Senac DF
