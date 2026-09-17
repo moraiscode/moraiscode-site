@@ -207,20 +207,20 @@ body::after{
 .hero-role{
   font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
   font-size:.82rem;
+  font-weight:400;
   letter-spacing:0;
   line-height:1.5;
-  color:var(--cyan);
-  text-shadow:0 0 0.75rem var(--glow);
+  color:#00ff41;
+  text-shadow:0 0 0.25rem rgba(0,255,65,.85),0 0 0.75rem rgba(0,255,65,.45);
   margin-bottom:.4rem;
 }
 
 /* hero terminal-style (igual à home): texto verde + barrinha piscando */
+/* o trecho "Engenheiro de Software" herda TUDO da linha (família, tamanho, cor e glow) */
 .hero-role .typed{
-  font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
-  color:#00ff41;
-  text-shadow:
-    0 0 0.25rem rgba(0,255,65,.85),
-    0 0 0.75rem rgba(0,255,65,.45);
+  font:inherit;
+  color:inherit;
+  text-shadow:inherit;
 }
 .hero-role .cursor{
   display:inline-block;
