@@ -318,7 +318,7 @@ body::after{
   transition:transform .25s ease;
 }
 .card-ic svg{width:1.25rem;height:1.25rem}
-.card--cv{grid-column:1/-1}
+.card--cv{display:none;grid-column:1/-1}
 .card:hover .card-ic{transform:scale(1.1)}
 .card-txt{position:relative;z-index:1;display:flex;flex-direction:column;min-width:0}
 .card-txt strong{font-family:'Orbitron',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff}
@@ -390,7 +390,6 @@ body::after{
 /* RESPONSIVE */
 /* tablet / mobile: troca o botão flutuante pelo do topo */
 @media(max-width:900px){
-  .fab{display:none}
   .container{padding:1.75rem 1.25rem}
 }
 
@@ -403,6 +402,8 @@ body::after{
   .tech{height:auto;aspect-ratio:1}
   .tech svg{width:1.0625rem;height:1.0625rem}
   .cards{grid-template-columns:1fr;gap:0.625rem}
+  .card--cv{display:flex}
+  .fab{display:none}
   .card{padding:0.8125rem 0.9375rem}
   .footer{margin-top:1.125rem}
   .bio{font-size:.86rem}
