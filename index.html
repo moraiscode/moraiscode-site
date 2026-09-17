@@ -383,11 +383,43 @@ body::after{
   transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
 }
 .fab svg{width:1.05rem;height:1.05rem;color:var(--cyan);filter:drop-shadow(0 0 0.25rem var(--glow))}
+
+/* Botão "Currículo" no topo (mobile/tablet) */
+.cv-cta{
+  position:fixed;
+  top:calc(.75rem + env(safe-area-inset-top,0px));
+  right:calc(.75rem + env(safe-area-inset-right,0px));
+  z-index:30;
+  display:none;
+  align-items:center;
+  gap:.35rem;
+  font-family:'Orbitron',sans-serif;
+  font-size:.58rem;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--cyan);
+  text-decoration:none;
+  background:rgba(11,12,16,.88);
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+  border:0.0625rem solid color-mix(in srgb,var(--cyan) 45%,var(--border));
+  border-radius:.7rem;
+  padding:.5rem .7rem;
+  box-shadow:0 0 1.25rem -0.4rem var(--glow);
+}
+.cv-cta svg{width:1rem;height:1rem}
 .fab:hover{transform:translateY(-0.125rem);border-color:var(--cyan);box-shadow:0 0 1.5rem -0.25rem var(--glow)}
 
 /* RESPONSIVE */
+/* tablet / mobile: troca o botão flutuante pelo do topo */
+@media(max-width:900px){
+  .cv-cta{display:inline-flex}
+  .fab{display:none}
+  .container{padding:1.75rem 1.25rem}
+}
+
 @media(max-width:560px){
-  .container{padding:1.125rem 1rem}
+  .container{padding:1.125rem 1rem;padding-top:3.25rem}
   .br-desk{display:none}
   .avatar{width:6rem;height:6rem;margin-bottom:0.875rem}
   .badge{margin-bottom:1rem}
@@ -397,6 +429,9 @@ body::after{
   .cards{grid-template-columns:1fr;gap:0.625rem}
   .card{padding:0.8125rem 0.9375rem}
   .footer{margin-top:1.125rem}
+  .bio{font-size:.86rem}
+  .cv-cta{font-size:.55rem;padding:.45rem .6rem}
+  .about a,.footer a{overflow-wrap:anywhere}
 }
 
 @media(prefers-reduced-motion:reduce){
@@ -407,6 +442,10 @@ body::after{
 <body>
 
 <canvas id="matrix" aria-hidden="true"></canvas>
+  <a href="/curriculo/" class="cv-cta" aria-label="Ver currículo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
+    <span>Currículo</span>
+  </a>
 
 <div class="container">
 
